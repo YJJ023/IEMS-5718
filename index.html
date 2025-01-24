@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Clothing shopping platform </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Clothing shopping platform </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body><!-- bg-dark -->
+
+  <header class="had text-light"><!--  py-3 -->
+    <!-- <div class=" container"></div> -->
+
+    <nav class="theNav">
+      <h1>Clothing shopping platform </h1>
+      <ul class="theUl">
+        <li><button><i class="fa-sharp fa-regular fa-bell"></i></button></li>
+        <li><button><i class="fa-regular fa-message"></i></button></li>
+        <li><button><i class="fa-regular fa-user"></i></button></li>
+        <li>
+          <p id="user">Hi,IEMS5718</p>
+        </li>
+        <li><a id="user1" style="width: 100px; margin-right: 20px; color: red; margin-left: 10px; font-size: small;">Log
+            Out</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row a">
+        <!-- <div class="sidebar-container">
+          <p class="sidebar-header sidebar-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clothing shopping platform &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服装购物平台IEMS5718
+          </p>
+          <p class="sidebar-menu hov">Category1</p>
+          <p class="sidebar-menu hov">Category2</p>
+          <p class="sidebar-menu hov">Category8</p>
+        </div>Not yet open -->
+        <ul class="sidebar-container menu">
+          <li class="category sidebar-menu hov" onclick="showProductList('category1')">Category 1</li>
+          <li class="category sidebar-menu hov" onclick="showProductList('category2')">Category 2</li>
+          <li class="category sidebar-menu hov" onclick="showProductList('category3')">Category 3</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+          <li class="category sidebar-menu hov">Not yet open</li>
+
+        </ul>
+        <section class="col-10">
+
+          <section class="row" id="navigation">
+            <section class="col-9">
+              <span id="first-nav">
+                <a href="index.html">Home</a>
+                >
+              </span>
+              <span id="second-nav">
+                <a href="#" onclick="backToCategory()">Category</a>
+                >
+              </span>
+              <span id="third-nav">
+                <a href="#">Product</a>
+              </span>
+            </section>
+            <section class="col-3" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+              <button type="button" class="btn btn-success">Shopping Car</button>
+              <div id="dropdown" class="dropdown-content">
+                <h3>Shopping Car</h3>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Product id</th>
+                      <th scope="col">product name</th>
+                      <th scope="col">the amount</th>
+                      <th scope="col">unit price</th>
+                      <th scope="col">total price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Short-sleeved</td>
+                      <td contenteditable="true">2</td>
+                      <td>100</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>suit</td>
+                      <td contenteditable="true">2</td>
+                      <td>200</td>
+                      <td>400</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>total: $600</h4>
+                <button type="button" class="btn btn-primary">Checkout</button>
+              </div>
+            </section>
+          </section>
+
+          <!-- product list -->
+          <section class="grid" id="product-list">
+            <div class="mn">
+              🏃Here you will find the perfect combination of the latest trends and classic designs. 🌏
+              Whether you're
+              looking⚡
+              for a stylish everyday outfit or need a special outfit to express your personality,🏃 we have a wide range
+              of
+              options for you.🥋 Our platform brings together quality brands from all over the world to ensure that
+              every
+              item meets your expectations.
+
+
+
+              ✍️Browse our product categories to easily find the right style and color for you. Each piece of clothing
+              has
+              been carefully selected to provide you with a dual experience of comfort and beauty. Whether it's a
+              romantic
+              dress, a casual T-shirt,👋 or an elegant coat, we have it all.
+
+
+
+              Start your shopping journey now and enjoy a convenient online shopping experience! Let us help you become
+              more stylish and confident. 🖋Your perfect look starts here!</div>
+          </section>
+
+          <iframe src="productDetail.html" width="100%" height="400px" id="productPage"></iframe>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
